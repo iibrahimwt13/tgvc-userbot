@@ -1,4 +1,4 @@
-"""Pyrogram Smart Plugin for notes in t.me/VCSets
+"""Notlar için Pyrogram Akıllı Eklentisi t.me/VCSets
 
 Required chat permission:
 - Delete messages
@@ -10,7 +10,7 @@ notes = {}
 url = {}
 response = {}
 
-notes['notes'] = f"""{emoji.SPIRAL_NOTEPAD} **Notes** (/notes):
+notes['notes'] = f"""{emoji.SPIRAL_NOTEPAD} **Notlar** (/notes):
 
 `#notes` __list all notes__
 `#heroku` __deploy to heroku__
@@ -35,10 +35,10 @@ notes['heroku'] = f"""{emoji.LABEL} **Heroku** (/notes #heroku):
 **Session String**:
 __choose one of the two__
 
-- Run [the code]({url['readme_heroku']}) by yourself
-- [replit]({url['replit']}), use it at your own risk"""
+- Run [the code]({url['readme_heroku']}) tek başına
+- [replit]({url['replit']}), kendi riskinizle kullanmak"""
 
-notes['raw'] = f"""{emoji.LABEL} **RAW PCM file size** (/notes #raw):
+notes['raw'] = f"""{emoji.LABEL} **RAW PCM dosya boyutu** (/notes #raw):
 
 `filesize_in_bytes / second == channel * sample_rate * bit_depth / 8`
 
