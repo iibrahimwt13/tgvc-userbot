@@ -60,7 +60,7 @@ async def ping_pong(_, m: Message):
                    & ~filters.via_bot
                    & filters.regex("^!uptime$"))
 async def get_uptime(_, m: Message):
-    """/uptime Reply with readable uptime and ISO 8601 start time"""
+    """/uptime süresi Okunabilir çalışma süresi ve ISO 8601 başlangıç saati ile yanıtla"""
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
