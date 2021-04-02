@@ -16,8 +16,8 @@ Radio stations:
 
 1. https://hls-01-regions.emgsound.ru/11_msk/playlist.m3u8
 
-To start replay to this message with command !start <ID>
-To stop use !stop command
+Bu iletiyi yeniden yürütmeyi !start komutuyla başlatmak için<ID>
+!stop komutunu kullanmayı durdurmak için
 '''
 
 
@@ -42,7 +42,7 @@ async def start(client, message: Message):
 
     if not message.reply_to_message or len(message.command) < 2:
         await message.reply_text(
-            'You forgot to replay list of stations or pass a station ID'
+            'İstasyon listesini yeniden oynatmayı veya bir istasyonu geçmeyi unuttunuz ID'
         )
         return
 
@@ -76,7 +76,7 @@ async def start(client, message: Message):
     ).overwrite_output().run_async()
     FFMPEG_PROCESSES[message.chat.id] = process
 
-    await message.reply_text(f'Radio #{station_id} is playing...')
+    await message.reply_text(f'Radio #{station_id} oynatılıyor...')
 
 
 @Client.on_message(anonymous & filters.command('stop', prefixes='!'))
