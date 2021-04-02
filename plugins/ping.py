@@ -45,7 +45,7 @@ async def _human_time_duration(seconds):
                    & ~filters.via_bot
                    & filters.regex("^!ping$"))
 async def ping_pong(_, m: Message):
-    """reply ping with pong and delete both messages"""
+    """pong ile ping'i yanıtlama ve her iki iletiyi de silme"""
     start = time()
     m_reply = await m.reply_text("...")
     delta_ping = time() - start
