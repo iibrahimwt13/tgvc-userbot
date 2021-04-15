@@ -62,7 +62,7 @@ async def start(client, message: Message):
             break
 
     if not station_stream_url:
-        await message.reply_text(f'Can\'t find a station with id {station_id}')
+        await message.reply_text(f'Yapamam\'t kimlikli bir istasyon bulmak {station_id}')
         return
 
     await group_call.start(message.chat.id)
