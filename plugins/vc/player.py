@@ -43,14 +43,14 @@ __starts with ! (exclamation mark)__
 '!skip' [n] ...  geçerli veya n atla burada n >= 2
 '!join' geçerli grubun sesli sohbetine katılma
 '!leave' geçerli sesli sohbeti bırak
-'!vc' hangi VC'nin katıldığını denetle
+'!vc' hangi Wyline'nin katıldığını denetle
 '!stop' çalmayı durdur 
 '!replay' oyunu
 '!clean' kullanılmayan RAW PCM dosyalarını kaldır
 '!pause' çalmayı duraklat
 '!resume' çalmaya devam et
-'!sessize alma' VC kullanıcı robotunu sessize alma
-'!unmute' VC kullanıcı robotunun sesini aç
+'!sessize alma' Wyline kullanıcı robotunu sessize alma
+'!unmute' Wyline kullanıcı robotunun sesini aç
 """
 
 USERBOT_REPO = f"""{emoji.ROBOT} **Telegram Sesli Sohbet UserBot**
